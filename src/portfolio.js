@@ -201,35 +201,35 @@ https://react-icons.github.io/react-icons */
       ]
     },
     {
-      skillTypeName: "Cloud Services",
+      skillTypeName: "AWS Cloud Services",
       areReactIcon: false,
       skills: [
         {
-          skillName: "AWS EC2",
+          skillName: "EC2",
           imageName: ec2Icon
         },
         {
-          skillName: "AWS S3",
+          skillName: "S3",
           imageName: s3Icon
         },
         {
-          skillName: "AWS Secrets Manager",
+          skillName: "Secrets Manager",
           imageName: secretsManager
         },
         {
-          skillName: "AWS Lambda",
+          skillName: "Lambda",
           imageName: lambdaIcon
         },
         {
-          skillName: "AWS Managed Airflow",
+          skillName: "Managed Airflow",
           imageName: airflowIcon
         },
         {
-          skillName: "AWS SageMaker",
+          skillName: "SageMaker",
           imageName: sageMakerIcon
         },
         {
-          skillName: "AWS IAM",
+          skillName: "IAM",
           imageName: iamIcon
         },
         {
@@ -237,11 +237,11 @@ https://react-icons.github.io/react-icons */
           imageName: cloudFormationIcon
         },
         {
-          skillName: "AWS SQS",
+          skillName: "SQS",
           imageName: sqsIcon
         },
         {
-          skillName: "AWS SNS",
+          skillName: "SNS",
           imageName: snsIcon
         },
         {
