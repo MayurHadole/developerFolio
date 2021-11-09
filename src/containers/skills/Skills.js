@@ -34,7 +34,9 @@ export default function Skills() {
             >
               {skillsSection.title}{" "}
             </h1>
-            {skillsSection.skillType.map((skillType) => (<SoftwareSkill skillType={skillType} />))}
+            {skillsSection.skillType.map(skillType => (
+              <SoftwareSkill skillType={skillType} />
+            ))}
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (

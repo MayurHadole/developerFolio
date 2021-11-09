@@ -36,8 +36,10 @@ export default function GithubProfileCard({prof}) {
                   </svg>
                   {prof.location}
                   <div className="blog-header">
-              <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
-            </div>
+                    <p className="subTitle blog-subtitle">
+                      {contactInfo.subtitle}
+                    </p>
+                  </div>
                 </span>
               </div>
             )}

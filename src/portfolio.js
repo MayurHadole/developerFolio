@@ -4,15 +4,36 @@
 
 import emoji from "react-easy-emoji";
 
-import { FaHtml5, FaAws, FaSnowflake, FaJava, FaPython, FaCode, FaDatabase } from "react-icons/fa";
 import {
-  SiApachekafka, SiApacheairflow, SiTerraform, SiAnsible, SiGnubash,
-  SiJavascript, SiCplusplus, SiDbt, SiSaltstack, SiGithubactions, SiBamboo,
-  SiBitbucket, SiSonarqube, SiApachemaven, SiTypescript, SiCss3, SiAngular,
-  SiBootstrap, SiReact
+  FaHtml5,
+  FaAws,
+  FaSnowflake,
+  FaJava,
+  FaPython,
+  FaCode,
+  FaDatabase
+} from "react-icons/fa";
+import {
+  SiApachekafka,
+  SiApacheairflow,
+  SiTerraform,
+  SiAnsible,
+  SiGnubash,
+  SiJavascript,
+  SiCplusplus,
+  SiDbt,
+  SiSaltstack,
+  SiGithubactions,
+  SiBamboo,
+  SiBitbucket,
+  SiSonarqube,
+  SiApachemaven,
+  SiTypescript,
+  SiCss3,
+  SiAngular,
+  SiBootstrap,
+  SiReact
 } from "react-icons/si";
-
-
 
 // Summary And Greeting Section
 
@@ -59,10 +80,10 @@ const skillsSection = {
 
   /* Make Sure to include correct Icon name to view your icon
 https://react-icons.github.io/react-icons */
-  skillType: [{
-    skillTypeName: "Programming",
-    skills:
-      [
+  skillType: [
+    {
+      skillTypeName: "Programming",
+      skills: [
         {
           skillName: "Java",
           iconName: FaJava
@@ -92,11 +113,10 @@ https://react-icons.github.io/react-icons */
           iconName: FaCode
         }
       ]
-  },
-  {
-    skillTypeName: "Big Data",
-    skills:
-      [
+    },
+    {
+      skillTypeName: "Big Data",
+      skills: [
         {
           skillName: "Kafka",
           iconName: SiApachekafka
@@ -122,11 +142,10 @@ https://react-icons.github.io/react-icons */
           iconName: SiDbt
         }
       ]
-  },
-  {
-    skillTypeName: "DevOps Tools",
-    skills:
-      [
+    },
+    {
+      skillTypeName: "DevOps Tools",
+      skills: [
         {
           skillName: "Terraform",
           iconName: SiTerraform
@@ -164,11 +183,10 @@ https://react-icons.github.io/react-icons */
           iconName: SiSonarqube
         }
       ]
-  },
-  {
-    skillTypeName: "Cloud",
-    skills:
-      [
+    },
+    {
+      skillTypeName: "Cloud",
+      skills: [
         {
           skillName: "AWS EC2",
           iconName: FaAws
@@ -212,14 +230,12 @@ https://react-icons.github.io/react-icons */
         {
           skillName: "CloudWatch",
           iconName: FaAws
-        },
-
+        }
       ]
-  },
-  {
-    skillTypeName: "Web",
-    skills:
-      [
+    },
+    {
+      skillTypeName: "Web",
+      skills: [
         {
           skillName: "HTML5",
           iconName: FaHtml5
@@ -253,7 +269,7 @@ https://react-icons.github.io/react-icons */
           iconName: SiReact
         }
       ]
-  },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -279,7 +295,9 @@ const educationInfo = {
       subHeader: "Bachelor in Electronics & Communication Engineering",
       duration: "2012 - 2015",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Relevant Courses: C/C++ Programming, Verilog, VSDL, Communication Skills "]
+      descBullets: [
+        "Relevant Courses: C/C++ Programming, Verilog, VSDL, Communication Skills "
+      ]
     },
     {
       schoolName: "N. G. Patel Polytechnic",
@@ -287,7 +305,9 @@ const educationInfo = {
       subHeader: "Diploma in Electronics & Communication Engineering",
       duration: "2009 - 2012",
       desc: "Silver Medal (Recognition for Academic Achievement )",
-      descBullets: ["Relevant Courses: C/C++ Programming, Verilog, VSDL, Communication Skills "]
+      descBullets: [
+        "Relevant Courses: C/C++ Programming, Verilog, VSDL, Communication Skills "
+      ]
     }
   ]
 };
@@ -334,7 +354,6 @@ const workExperiences = {
         "Conceived and wrote detailed software implementations while ensuring that their code adhere to the security, logging, error handling, and performance standards and non-functional requirements.",
         "Automating on-boarding of clients to Kafka by developing CI/CD pipelines for Kafka Streams, Topics, ACLs, Schemas, Kafka Connectors etc.",
         "Skills:Application Development(Java, KafkaStreams, KafkaConnect, JUnit), Other(JSON, AVRO, WSDL, HTML, CSS3, JavaScript, Angular, Git, Ansible, Bamboo, Jira, Confluence)."
-
       ]
     },
     {
@@ -370,11 +389,11 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false, // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const gitHubProfile = {
-  display: true, // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set true or false to show Contact profile using Github, defaults to true
 };
 
 // Some big projects you have worked on
@@ -457,7 +476,7 @@ const achievementSection = {
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       footerLink: [
-        { name: "Certification", url: "" },
+        {name: "Certification", url: ""},
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -527,8 +546,7 @@ const podcastSection = {
 const contactInfo = {
   display: false,
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Reach out to me!",
+  subtitle: "Reach out to me!",
   number: "+1 226 505 8235",
   email_address: "mayurhadole@gmail.com"
 };
