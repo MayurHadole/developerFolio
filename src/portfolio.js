@@ -8,7 +8,8 @@ import { FaHtml5, FaAws, FaSnowflake, FaJava, FaPython, FaCode, FaDatabase } fro
 import {
   SiApachekafka, SiApacheairflow, SiTerraform, SiAnsible, SiGnubash,
   SiJavascript, SiCplusplus, SiDbt, SiSaltstack, SiGithubactions, SiBamboo,
-  SiBitbucket, SiSonarqube, SiApachemaven
+  SiBitbucket, SiSonarqube, SiApachemaven, SiTypescript, SiCss3, SiAngular,
+  SiBootstrap, SiReact
 } from "react-icons/si";
 
 
@@ -205,10 +206,52 @@ https://react-icons.github.io/react-icons */
           iconName: FaAws
         },
         {
+          skillName: "AWS SNS",
+          iconName: FaAws
+        },
+        {
           skillName: "CloudWatch",
           iconName: FaAws
         },
 
+      ]
+  },
+  {
+    skillTypeName: "Web",
+    skills:
+      [
+        {
+          skillName: "HTML5",
+          iconName: FaHtml5
+        },
+        {
+          skillName: "CSS",
+          iconName: SiCss3
+        },
+        {
+          skillName: "JavaScript",
+          iconName: SiJavascript
+        },
+        {
+          skillName: "React",
+          iconName: SiReact
+        },
+        {
+          skillName: "Angular",
+          iconName: SiAngular
+        },
+        {
+          skillName: "Bootstrap",
+          iconName: SiBootstrap
+        },
+        {
+          skillName: "Typescript",
+          iconName: SiTypescript
+        },
+        {
+          skillName: "React",
+          iconName: SiReact
+        }
       ]
   },
   ],
@@ -218,26 +261,33 @@ https://react-icons.github.io/react-icons */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Conestoga College",
+      logo: require("./assets/images/conestogaLogo.png"),
+      subHeader: "Post Grad Diploma in Embedded Systems Development",
+      duration: "2016 - 2017",
+      desc: "Dean's Honors List Recognition",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Relevant Courses: Operating Systems, Data Structures and Algorithms, Embedded Programming (C/C++)"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
+      schoolName: "Government Engineering College, Gandhinagar",
+      logo: require("./assets/images/GECGlogo.png"),
+      subHeader: "Bachelor in Electronics & Communication Engineering",
+      duration: "2012 - 2015",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Relevant Courses: C/C++ Programming, Verilog, VSDL, Communication Skills "]
+    },
+    {
+      schoolName: "N. G. Patel Polytechnic",
+      logo: require("./assets/images/ngppLogo.png"),
+      subHeader: "Diploma in Electronics & Communication Engineering",
+      duration: "2009 - 2012",
+      desc: "Silver Medal (Recognition for Academic Achievement )",
+      descBullets: ["Relevant Courses: C/C++ Programming, Verilog, VSDL, Communication Skills "]
     }
   ]
 };
@@ -475,9 +525,10 @@ const podcastSection = {
 };
 
 const contactInfo = {
+  display: false,
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Reach out to me!",
   number: "+1 226 505 8235",
   email_address: "mayurhadole@gmail.com"
 };
