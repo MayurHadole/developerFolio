@@ -4,6 +4,15 @@
 
 import emoji from "react-easy-emoji";
 
+import { FaHtml5, FaAws, FaSnowflake, FaJava, FaPython, FaCode, FaDatabase } from "react-icons/fa";
+import {
+  SiApachekafka, SiApacheairflow, SiTerraform, SiAnsible, SiGnubash,
+  SiJavascript, SiCplusplus, SiDbt, SiSaltstack, SiGithubactions, SiBamboo,
+  SiBitbucket, SiSonarqube, SiApachemaven
+} from "react-icons/si";
+
+
+
 // Summary And Greeting Section
 
 const illustration = {
@@ -11,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Mayur Hadole",
+  title: "Hi all, I'm Mayur",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Software Developer with experience in event driven systems. Proficiency in operating multi-region distributed streaming platforms like Apache Kafka on AWS and On-premise. Ample software development life-cycle experience exercised from start to finish along with prominent communication skills and constructive attitude."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://raw.githubusercontent.com/MayurHadole/awesome-cv/main/mayurhadole_cv_resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/MayurHadole",
+  linkedin: "https://www.linkedin.com/in/mayur-hadole/",
+  gmail: "mayurhadole@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -39,74 +48,169 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Skills",
+  subTitle: "Programming",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Kafka Admin"),
+    emoji("⚡ Cloud Architect"),
+    emoji("⚡ DevOps")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  /* Make Sure to include correct Icon name to view your icon
+https://react-icons.github.io/react-icons */
+  skillType: [{
+    skillTypeName: "Programming",
+    skills:
+      [
+        {
+          skillName: "Java",
+          iconName: FaJava
+        },
+        {
+          skillName: "Python",
+          iconName: FaPython
+        },
+        {
+          skillName: "Bash",
+          iconName: SiGnubash
+        },
+        {
+          skillName: "JavaScript",
+          iconName: SiJavascript
+        },
+        {
+          skillName: "C/C++",
+          iconName: SiCplusplus
+        },
+        {
+          skillName: "VHDL",
+          iconName: FaCode
+        },
+        {
+          skillName: "Verilog",
+          iconName: FaCode
+        }
+      ]
+  },
+  {
+    skillTypeName: "Big Data",
+    skills:
+      [
+        {
+          skillName: "Kafka",
+          iconName: SiApachekafka
+        },
+        {
+          skillName: "Kafka connect",
+          iconName: SiApachekafka
+        },
+        {
+          skillName: "Airflow",
+          iconName: SiApacheairflow
+        },
+        {
+          skillName: "SQL",
+          iconName: FaDatabase
+        },
+        {
+          skillName: "Snowflake",
+          iconName: FaSnowflake
+        },
+        {
+          skillName: "DBT",
+          iconName: SiDbt
+        }
+      ]
+  },
+  {
+    skillTypeName: "DevOps Tools",
+    skills:
+      [
+        {
+          skillName: "Terraform",
+          iconName: SiTerraform
+        },
+        {
+          skillName: "Ansible",
+          iconName: SiAnsible
+        },
+        {
+          skillName: "SaltStack",
+          iconName: SiSaltstack
+        },
+        {
+          skillName: "GitHub Actions",
+          iconName: SiGithubactions
+        },
+        {
+          skillName: "Bamboo",
+          iconName: SiBamboo
+        },
+        {
+          skillName: "Maven",
+          iconName: SiApachemaven
+        },
+        {
+          skillName: "GitHub",
+          iconName: SiDbt
+        },
+        {
+          skillName: "BitBucket",
+          iconName: SiBitbucket
+        },
+        {
+          skillName: "SonarQube",
+          iconName: SiSonarqube
+        }
+      ]
+  },
+  {
+    skillTypeName: "Cloud",
+    skills:
+      [
+        {
+          skillName: "AWS EC2",
+          iconName: FaAws
+        },
+        {
+          skillName: "AWS S3",
+          iconName: FaAws
+        },
+        {
+          skillName: "Secrets Manager",
+          iconName: FaAws
+        },
+        {
+          skillName: "Lambda",
+          iconName: FaAws
+        },
+        {
+          skillName: "Managed Airflow",
+          iconName: FaAws
+        },
+        {
+          skillName: "SageMaker",
+          iconName: FaAws
+        },
+        {
+          skillName: "AWS IAM",
+          iconName: FaAws
+        },
+        {
+          skillName: "CloudFormation",
+          iconName: FaAws
+        },
+        {
+          skillName: "AWS SQS",
+          iconName: FaAws
+        },
+        {
+          skillName: "CloudWatch",
+          iconName: FaAws
+        },
 
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      ]
+  },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -114,7 +218,7 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Harvard University",
@@ -141,7 +245,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -165,29 +269,48 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Developer",
+      company: "BMO Financial Group",
+      companylogo: require("./assets/images/BMOlogo.png"),
+      date: "January 2020 – Present",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Design, build, secure, implement and maintain Multi-data-center Kafka infrastructure.",
+        "Build automation to provision, maintain, and monitor all aspects of the Kafka environment via infrastructure as code.",
+        "To meet stringent Recovery Point Objective (RPO), converted traditional Kafka clusters to multi region clusters.",
+        "Helped build real-time streaming data pipelines to reliably get data between systems and applications.",
+        "Identify bottlenecks and tune to optimize Kafka performance and throughput.",
+        "Built real-time streaming applications Kafka streams that transform & react to streams of data.",
+        "Conceived and wrote detailed software implementations while ensuring that their code adhere to the security, logging, error handling, and performance standards and non-functional requirements.",
+        "Automating on-boarding of clients to Kafka by developing CI/CD pipelines for Kafka Streams, Topics, ACLs, Schemas, Kafka Connectors etc.",
+        "Skills:Application Development(Java, KafkaStreams, KafkaConnect, JUnit), Other(JSON, AVRO, WSDL, HTML, CSS3, JavaScript, Angular, Git, Ansible, Bamboo, Jira, Confluence)."
+
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Developer",
+      company: "Orbis Communications",
+      companylogo: require("./assets/images/orbisLogo.png"),
+      date: "October 2019 – May 2019",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Enhancement & bug fixes in jQuery/Java based product.",
+        "Skills:Application Development(Java, Spring, JSP, Hibernate, SQL, JUnit, jQuery, JavaScript, HTML/CSS), Scripting(Bash, Python), Other(BitBucket, Jira, HTML/CSS)."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Developer",
+      company: "TD Bank",
+      companylogo: require("./assets/images/TDbankLogo.jpeg"),
+      date: "March 2018 – June 2019",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Design & Develop Spring Batch jobs in Java using dependency management and build tool Maven.",
+        "Develop SQL stored procedures to perform data intensive logic and Shell Scripts for file manipulation, Job dependencies etc.",
+        "Develop SQL stored procedures to perform data intensive logic.",
+        "Excellent time-management skills through deadline driven projects and tasks.",
+        "Skills:Application Development(Java, Spring Batch, JDBC, Hibernate, JUnit), Scripting (Bash, Python), Other(Jenkins, Bitbucket, SonarQube, Confluence, Jira, HTML/CSS)."
+      ]
     }
   ]
 };
@@ -197,7 +320,11 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
+};
+
+const gitHubProfile = {
+  display: true, // Set true or false to show Contact profile using Github, defaults to true
 };
 
 // Some big projects you have worked on
@@ -230,7 +357,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -280,7 +407,7 @@ const achievementSection = {
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -288,7 +415,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -312,7 +439,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -331,7 +458,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -344,22 +471,22 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1 226 505 8235",
+  email_address: "mayurhadole@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
@@ -371,6 +498,7 @@ export {
   techStack,
   workExperiences,
   openSource,
+  gitHubProfile,
   bigProjects,
   achievementSection,
   blogSection,
