@@ -23,7 +23,7 @@ import {
   FaJava,
   FaPython,
   FaCode,
-  FaDatabase,
+  FaDatabase
 } from "react-icons/fa";
 import {
   SiApachekafka,
