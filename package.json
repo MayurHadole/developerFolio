@@ -20,6 +20,7 @@
     "react-scripts": "^3.4.3",
     "react-test-renderer": "^17.0.2",
     "react-twitter-embed": "3.0.3",
+    "aws-svg-icons": "3.0.0-2021-07-30",
     "sass": "^1.32.8"
   },
   "scripts": {

@@ -25,7 +25,12 @@ export default function SoftwareSkill(props) {
                 className="software-skill-inline"
                 name={skills.skillName}
               >
-                <Icon />
+                {props.skillType.areReactIcon ? (
+                  <Icon />
+                ) : (
+                  <img src={skills.imageName} alt={skills.skillName} />
+                )}
+
                 <p>{skills.skillName}</p>
               </li>
             );

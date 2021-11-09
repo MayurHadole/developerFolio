@@ -1,8 +1,20 @@
 /* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
+
+// https://www.npmjs.com/package/aws-svg-icons
+import lambdaIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Compute/32/Arch_AWS-Lambda_32.svg";
+import s3Icon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Storage/32/Arch_Amazon-Simple-Storage-Service_32.svg";
+import secretsManager from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Security-Identity-Compliance/32/Arch_AWS-Secrets-Manager_32.svg";
+import ec2Icon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Compute/32/Arch_Amazon-EC2_32.svg";
+import airflowIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_App-Integration/Arch_32/Arch_Amazon-Managed-Workflows-for-Apache-Airflow_32.svg";
+import sageMakerIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Machine-Learning/32/Arch_Amazon-SageMaker_32.svg";
+import iamIcon from "aws-svg-icons/lib/Resource-Icons_07302021/Res_Security-Identity-and-Compliance/Res_48_Light/Res_AWS-Identity-Access-Management_AWS-IAM-Access-Analyzer_48_Light.svg";
+import cloudFormationIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Management-Governance/32/Arch_AWS-CloudFormation_32.svg";
+import sqsIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_App-Integration/Arch_32/Arch_Amazon-Simple-Queue-Service_32.svg";
+import snsIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_App-Integration/Arch_32/Arch_Amazon-Simple-Notification-Service_32.svg";
+import cloudWatchIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Management-Governance/32/Arch_Amazon-CloudWatch_32.svg";
 
 import {
   FaHtml5,
@@ -11,7 +23,7 @@ import {
   FaJava,
   FaPython,
   FaCode,
-  FaDatabase
+  FaDatabase,
 } from "react-icons/fa";
 import {
   SiApachekafka,
@@ -32,7 +44,8 @@ import {
   SiCss3,
   SiAngular,
   SiBootstrap,
-  SiReact
+  SiReact,
+  SiGooglecloud
 } from "react-icons/si";
 
 // Summary And Greeting Section
@@ -83,6 +96,7 @@ https://react-icons.github.io/react-icons */
   skillType: [
     {
       skillTypeName: "Programming",
+      areReactIcon: true,
       skills: [
         {
           skillName: "Java",
@@ -116,6 +130,7 @@ https://react-icons.github.io/react-icons */
     },
     {
       skillTypeName: "Big Data",
+      areReactIcon: true,
       skills: [
         {
           skillName: "Kafka",
@@ -145,6 +160,7 @@ https://react-icons.github.io/react-icons */
     },
     {
       skillTypeName: "DevOps Tools",
+      areReactIcon: true,
       skills: [
         {
           skillName: "Terraform",
@@ -185,56 +201,72 @@ https://react-icons.github.io/react-icons */
       ]
     },
     {
-      skillTypeName: "Cloud",
+      skillTypeName: "Cloud Services",
+      areReactIcon: false,
       skills: [
         {
           skillName: "AWS EC2",
-          iconName: FaAws
+          imageName: ec2Icon
         },
         {
           skillName: "AWS S3",
-          iconName: FaAws
+          imageName: s3Icon
         },
         {
-          skillName: "Secrets Manager",
-          iconName: FaAws
+          skillName: "AWS Secrets Manager",
+          imageName: secretsManager
         },
         {
-          skillName: "Lambda",
-          iconName: FaAws
+          skillName: "AWS Lambda",
+          imageName: lambdaIcon
         },
         {
-          skillName: "Managed Airflow",
-          iconName: FaAws
+          skillName: "AWS Managed Airflow",
+          imageName: airflowIcon
         },
         {
-          skillName: "SageMaker",
-          iconName: FaAws
+          skillName: "AWS SageMaker",
+          imageName: sageMakerIcon
         },
         {
           skillName: "AWS IAM",
-          iconName: FaAws
+          imageName: iamIcon
         },
         {
           skillName: "CloudFormation",
-          iconName: FaAws
+          imageName: cloudFormationIcon
         },
         {
           skillName: "AWS SQS",
-          iconName: FaAws
+          imageName: sqsIcon
         },
         {
           skillName: "AWS SNS",
-          iconName: FaAws
+          imageName: snsIcon
         },
         {
           skillName: "CloudWatch",
+          imageName: cloudWatchIcon
+        }
+      ]
+    },
+    {
+      skillTypeName: "Cloud Providers",
+      areReactIcon: true,
+      skills: [
+        {
+          skillName: "AWS",
           iconName: FaAws
+        },
+        {
+          skillName: "GCP",
+          iconName: SiGooglecloud
         }
       ]
     },
     {
       skillTypeName: "Web",
+      areReactIcon: true,
       skills: [
         {
           skillName: "HTML5",
