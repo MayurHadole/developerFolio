@@ -118,6 +118,10 @@ https://react-icons.github.io/react-icons */
           iconName: SiJavascript
         },
         {
+          skillName: "Typescript",
+          iconName: SiTypescript
+        },
+        {
           skillName: "C/C++",
           iconName: SiCplusplus
         },
@@ -310,10 +314,6 @@ https://react-icons.github.io/react-icons */
         {
           skillName: "Typescript",
           iconName: SiTypescript
-        },
-        {
-          skillName: "React",
-          iconName: SiReact
         }
       ]
     }
