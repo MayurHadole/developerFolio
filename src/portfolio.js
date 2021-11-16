@@ -61,7 +61,7 @@ const greeting = {
   username: "Mayur Hadole",
   title: "Hi all, I'm Mayur",
   subTitle: emoji(
-    "Software Developer with experience in event driven systems. Proficiency in operating multi-region distributed streaming platforms like Apache Kafka on AWS and On-premise. Ample software development life-cycle experience exercised from start to finish along with prominent communication skills and constructive attitude."
+    "Software Engineer with experience in event-driven systems. Proficiency in operating multi-region distributed streaming platforms like Apache Kafka on AWS and On-premise. Proficient in provisioning and operating Data ETL systems using technologies  like Airflow, DBT, Kafka, Snowflake on public cloud like AWS. Ample software development life-cycle experience exercised from start to finish along with prominent communication skills and constructive attitude."
   ),
   resumeLink:
     "https://raw.githubusercontent.com/MayurHadole/awesome-cv/main/mayurhadole_cv_resume.pdf", // Set to empty to hide the button
