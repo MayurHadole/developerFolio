@@ -16,6 +16,7 @@ import sqsIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_
 import snsIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_App-Integration/Arch_32/Arch_Amazon-Simple-Notification-Service_32.svg";
 import cloudWatchIcon from "aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Management-Governance/32/Arch_Amazon-CloudWatch_32.svg";
 
+import {VscJson} from "react-icons/vsc";
 import {
   FaHtml5,
   FaAws,
@@ -23,7 +24,8 @@ import {
   FaJava,
   FaPython,
   FaCode,
-  FaDatabase
+  FaDatabase,
+  FaDocker
 } from "react-icons/fa";
 import {
   SiApachekafka,
@@ -45,7 +47,8 @@ import {
   SiAngular,
   SiBootstrap,
   SiReact,
-  SiGooglecloud
+  SiGooglecloud,
+  SiFavro
 } from "react-icons/si";
 
 // Summary And Greeting Section
@@ -155,6 +158,14 @@ https://react-icons.github.io/react-icons */
         {
           skillName: "DBT",
           iconName: SiDbt
+        },
+        {
+          skillName: "JSON",
+          iconName: VscJson
+        },
+        {
+          skillName: "Avro",
+          iconName: SiFavro
         }
       ]
     },
@@ -177,6 +188,10 @@ https://react-icons.github.io/react-icons */
         {
           skillName: "GitHub Actions",
           iconName: SiGithubactions
+        },
+        {
+          skillName: "Docker",
+          iconName: FaDocker
         },
         {
           skillName: "Bamboo",
@@ -371,10 +386,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Data Integration Developer",
+      company: "Tucows",
+      companylogo: require("./assets/images/tucowsLogo.png"),
+      date: "July 2021 – Present",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Design, build, secure, implement and maintain Data ETL platform with DBT, Airflow, Kafka and Snowflake",
+        "Build automation to provision, maintain, and monitor all aspects of Kafka, Airflow and AWS SageMaker environment via infrastructure as code.",
+        "Successful  migration of on-premise data ETL job orchestration system (Airflow) to AWS managed Airflow.",
+        "Administered Data Lake (Snowflake) using Terraform.",
+        "Deployed AWS Python Lambdas to create and deliver usage reports.",
+        "Implemented CI/CD for Machine learning Pipelines using Terraform and AWS SageMaker.",
+        " Used Terraform, SaltStack, GitHub Actions etc. to implement CI/CD pipelines for Kafka and Airflow.",
+        "Conceived and wrote detailed software implementations while ensuring that their code adhere to the security, logging, error handling, and performance standards and non-functional requirements.",
+        "Skills:Application Development(Python, Java, KafkaStreams, KafkaConnect, JUnit),AWS (IAM, S3, Lambda, Managed Airflow, SageMaker, SQS, SNS, CloudWatch, CloudFormation) Other(Terraform, Docker, SaltStack, Airflow, DBT, Snowflake, GitHub Actions, Jira, Confluence, Asana)."
+      ]
+    },
+    {
       role: "Software Developer",
       company: "BMO Financial Group",
       companylogo: require("./assets/images/BMOlogo.png"),
-      date: "January 2020 – Present",
+      date: "January 2020 – July 2021",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Design, build, secure, implement and maintain Multi-data-center Kafka infrastructure.",
