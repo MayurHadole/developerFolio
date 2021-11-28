@@ -425,7 +425,7 @@ const workExperiences = {
       role: "Software Developer",
       company: "Orbis Communications",
       companylogo: require("./assets/images/orbisLogo.png"),
-      date: "October 2019 – May 2019",
+      date: "October 2019 – December 2019",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       descBullets: [
         "Enhancement & bug fixes in jQuery/Java based product.",
