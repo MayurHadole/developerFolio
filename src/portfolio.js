@@ -421,17 +421,17 @@ const workExperiences = {
         "Skills:Application Development(Java, KafkaStreams, KafkaConnect, JUnit), Other(JSON, AVRO, WSDL, HTML, CSS3, JavaScript, Angular, Git, Ansible, Bamboo, Jira, Confluence)."
       ]
     },
-    {
-      role: "Software Developer",
-      company: "Orbis Communications",
-      companylogo: require("./assets/images/orbisLogo.png"),
-      date: "October 2019 – December 2019",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      descBullets: [
-        "Enhancement & bug fixes in jQuery/Java based product.",
-        "Skills:Application Development(Java, Spring, JSP, Hibernate, SQL, JUnit, jQuery, JavaScript, HTML/CSS), Scripting(Bash, Python), Other(BitBucket, Jira, HTML/CSS)."
-      ]
-    },
+    // {
+    //   role: "Software Developer",
+    //   company: "Orbis Communications",
+    //   companylogo: require("./assets/images/orbisLogo.png"),
+    //   date: "October 2019 – December 2019",
+    //   // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    //   descBullets: [
+    //     "Enhancement & bug fixes in jQuery/Java based product.",
+    //     "Skills:Application Development(Java, Spring, JSP, Hibernate, SQL, JUnit, jQuery, JavaScript, HTML/CSS), Scripting(Bash, Python), Other(BitBucket, Jira, HTML/CSS)."
+    //   ]
+    // },
     {
       role: "Software Developer",
       company: "TD Bank",
