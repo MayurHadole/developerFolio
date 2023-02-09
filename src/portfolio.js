@@ -395,10 +395,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Staff Engineer",
+      company: "Tucows",
+      companylogo: require("./assets/images/tucowsLogo.png"),
+      date: "May 2022 – Present",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      // descBullets: [
+      //   "Design, build, secure, implement and maintain Data ETL platform with DBT, Airflow, Kafka and Snowflake",
+      //   "Build automation to provision, maintain, and monitor all aspects of Kafka, Airflow and AWS SageMaker environment via infrastructure as code.",
+      //   "Successful  migration of on-premise data ETL job orchestration system (Airflow) to AWS managed Airflow.",
+      //   "Administered Data Lake (Snowflake) using Terraform.",
+      //   "Deployed AWS Python Lambdas to create and deliver usage reports.",
+      //   "Implemented CI/CD for Machine learning Pipelines using Terraform and AWS SageMaker.",
+      //   " Used Terraform, SaltStack, GitHub Actions etc. to implement CI/CD pipelines for Kafka and Airflow.",
+      //   "Conceived and wrote detailed software implementations while ensuring that their code adhere to the security, logging, error handling, and performance standards and non-functional requirements.",
+      //   "Skills:Application Development(Python, Java, KafkaStreams, KafkaConnect, JUnit),AWS (IAM, S3, Lambda, Managed Airflow, SageMaker, SQS, SNS, CloudWatch, CloudFormation) Other(Terraform, Docker, SaltStack, Airflow, DBT, Snowflake, GitHub Actions, Jira, Confluence, Asana)."
+      // ]
+    },
+    {
       role: "Data Integration Developer",
       company: "Tucows",
       companylogo: require("./assets/images/tucowsLogo.png"),
-      date: "July 2021 – Present",
+      date: "July 2021 – May 2022",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Design, build, secure, implement and maintain Data ETL platform with DBT, Airflow, Kafka and Snowflake",
